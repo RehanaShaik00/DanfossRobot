@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20210912 13:18:20.894" rpa="false" schemaversion="2">
+<suite id="s1" name="HighTempAlarmFeature &amp; LowTempAlarmFeature">
+<suite id="s1-s1" name="HighTempAlarmFeature" source="C:\Users\61449\PycharmProjects\DanfossAutomation\AlarmTest\Features\HighTempAlarmFeature.robot">
+<test id="s1-s1-t1" name="HighTempAlarmTest">
+<kw name="Given Set High temp alarm limit 25.0 deg-SVB5" library="HighTempAlarmStepDef">
+<kw name="LogintoSVB5 and Select device AK-CC550-018x 20" library="AlarmKeywords">
+<arg>Supervisor</arg>
+<arg>S@danfoss123</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${danfossURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210912 13:18:21.236" level="INFO">Opening browser 'chrome' to base url 'https://118.185.187.242:6027/#/'.</msg>
+<status status="PASS" starttime="20210912 13:18:21.236" endtime="20210912 13:18:23.048"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>50seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210912 13:18:23.049" endtime="20210912 13:18:23.051"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210912 13:18:23.051" endtime="20210912 13:18:23.051"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="details-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:18:23.052" level="INFO">Clicking element 'xpath://*[@id="details-button"]'.</msg>
+<status status="PASS" starttime="20210912 13:18:23.051" endtime="20210912 13:18:25.132"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://*[@id="proceed-link"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210912 13:18:25.132" level="INFO">Clicking link 'xpath://*[@id="proceed-link"]'.</msg>
+<status status="PASS" starttime="20210912 13:18:25.132" endtime="20210912 13:18:31.606"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="user"]</arg>
+<arg>${SVB5username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:18:31.606" level="INFO">Typing text 'Supervisor' into text field 'xpath://*[@id="user"]'.</msg>
+<status status="PASS" starttime="20210912 13:18:31.606" endtime="20210912 13:18:34.752"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="pwd"]</arg>
+<arg>${SVB5password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:18:34.752" level="INFO">Typing text 'S@danfoss123' into text field 'xpath://*[@id="pwd"]'.</msg>
+<status status="PASS" starttime="20210912 13:18:34.752" endtime="20210912 13:18:37.872"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="signup-form"]/form/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:18:37.872" level="INFO">Clicking element 'xpath://*[@id="signup-form"]/form/input'.</msg>
+<status status="PASS" starttime="20210912 13:18:37.872" endtime="20210912 13:18:39.973"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'File')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:18:39.975" level="INFO">Clicking element 'xpath://span[contains(text(),'File')]'.</msg>
+<status status="PASS" starttime="20210912 13:18:39.974" endtime="20210912 13:18:42.541"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Preferences')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:18:42.541" level="INFO">Clicking element 'xpath://span[contains(text(),'Preferences')]'.</msg>
+<status status="PASS" starttime="20210912 13:18:42.541" endtime="20210912 13:18:44.860"/>
+</kw>
+<kw name="Unselect Checkbox" library="SeleniumLibrary">
+<arg>xpath://app-header/div[@id='Preferences']/div[1]/div[1]/div[2]/div[5]/div[1]/input[1]</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<msg timestamp="20210912 13:18:44.861" level="INFO">Unselecting checkbox 'xpath://app-header/div[@id='Preferences']/div[1]/div[1]/div[2]/div[5]/div[1]/input[1]'.</msg>
+<status status="PASS" starttime="20210912 13:18:44.860" endtime="20210912 13:18:50.341"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://app-header/div[@id='Preferences']/div[1]/div[1]/div[1]/button[1]/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:18:50.342" level="INFO">Clicking element 'xpath://app-header/div[@id='Preferences']/div[1]/div[1]/div[1]/button[1]/span[1]'.</msg>
+<status status="PASS" starttime="20210912 13:18:50.341" endtime="20210912 13:18:52.847"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-dashboard/section/div/app-device[1]/div/div/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[24]/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20210912 13:18:52.847" endtime="20210912 13:18:55.465"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-dashboard/section/div/app-device[1]/div/div/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[24]/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:18:55.466" level="INFO">Clicking element 'xpath://*[@id="app-main"]/div/app-dashboard/section/div/app-device[1]/div/div/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[24]/datatable-body-row/div[2]/datatable-body-cell[2]'.</msg>
+<status status="PASS" starttime="20210912 13:18:55.465" endtime="20210912 13:18:58.106"/>
+</kw>
+<status status="PASS" starttime="20210912 13:18:21.236" endtime="20210912 13:18:58.106"/>
+</kw>
+<kw name="Set High Temp in SVB5" library="HighTempAlarmStepDef">
+<arg>25.0</arg>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>xpath://td[contains(text(),'25.0 °C')]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:18:58.107" level="INFO">Double clicking element 'xpath://td[contains(text(),'25.0 °C')]'.</msg>
+<status status="PASS" starttime="20210912 13:18:58.107" endtime="20210912 13:19:02.169"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://body/ngb-modal-window[1]/div[1]/div[1]/app-edit-float[1]/div[1]/form[1]/div[2]/input[1]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210912 13:19:02.169" endtime="20210912 13:19:04.323"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://body/ngb-modal-window[1]/div[1]/div[1]/app-edit-float[1]/div[1]/form[1]/div[2]/input[1]</arg>
+<arg>${tempvalueinsvb5}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:19:04.324" level="INFO">Typing text '25.0' into text field 'xpath://body/ngb-modal-window[1]/div[1]/div[1]/app-edit-float[1]/div[1]/form[1]/div[2]/input[1]'.</msg>
+<status status="PASS" starttime="20210912 13:19:04.324" endtime="20210912 13:19:07.546"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://body/ngb-modal-window[1]/div[1]/div[1]/app-edit-float[1]/div[1]/form[1]/div[3]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:19:07.546" level="INFO">Clicking element 'xpath://body/ngb-modal-window[1]/div[1]/div[1]/app-edit-float[1]/div[1]/form[1]/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20210912 13:19:07.546" endtime="20210912 13:19:09.668"/>
+</kw>
+<status status="PASS" starttime="20210912 13:18:58.106" endtime="20210912 13:19:09.668"/>
+</kw>
+<status status="PASS" starttime="20210912 13:18:21.236" endtime="20210912 13:19:09.669"/>
+</kw>
+<kw name="And Set Alarm Delay 0-SVB5" library="HighTempAlarmStepDef">
+<kw name="setting delay in svb5" library="AlarmKeywords">
+<arg>0</arg>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>xpath://td[contains(text(),'0 min')]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:19:09.671" level="INFO">Double clicking element 'xpath://td[contains(text(),'0 min')]'.</msg>
+<status status="PASS" starttime="20210912 13:19:09.671" endtime="20210912 13:19:12.039"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="idEditInt"]/form/div[2]/input</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210912 13:19:12.039" endtime="20210912 13:19:14.143"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="idEditInt"]/form/div[2]/input</arg>
+<arg>${delayvalueinsvb5}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:19:14.144" level="INFO">Typing text '0' into text field 'xpath://*[@id="idEditInt"]/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20210912 13:19:14.143" endtime="20210912 13:19:17.317"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="idEditInt"]/form/div[3]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:19:17.318" level="INFO">Clicking element 'xpath://*[@id="idEditInt"]/form/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20210912 13:19:17.317" endtime="20210912 13:19:19.454"/>
+</kw>
+<status status="PASS" starttime="20210912 13:19:09.670" endtime="20210912 13:19:19.454"/>
+</kw>
+<status status="PASS" starttime="20210912 13:19:09.670" endtime="20210912 13:19:19.455"/>
+</kw>
+<kw name="When set Thermostart air of AK CC 550 controller to 30.0 deg-MCX A0" library="HighTempAlarmStepDef">
+<kw name="LogintoMCX and select analog output" library="AlarmKeywords">
+<arg>admin</arg>
+<arg>PASS</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${MCXURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210912 13:19:19.457" level="INFO">Opening browser 'chrome' to base url 'http://118.185.187.242:6031/Login.html'.</msg>
+<status status="PASS" starttime="20210912 13:19:19.457" endtime="20210912 13:19:40.850"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>200seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210912 13:19:40.850" endtime="20210912 13:19:42.863"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210912 13:19:42.863" endtime="20210912 13:19:42.864"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="usernameDisplay"]</arg>
+<arg>${MCXusername}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:19:42.865" level="INFO">Typing text 'admin' into text field 'xpath://*[@id="usernameDisplay"]'.</msg>
+<status status="PASS" starttime="20210912 13:19:42.864" endtime="20210912 13:19:45.993"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='password']</arg>
+<arg>${MCXpassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:19:45.994" level="INFO">Typing text 'PASS' into text field 'xpath://input[@id='password']'.</msg>
+<status status="PASS" starttime="20210912 13:19:45.994" endtime="20210912 13:19:49.126"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="button_login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:19:49.127" level="INFO">Clicking element 'xpath://*[@id="button_login"]'.</msg>
+<status status="PASS" starttime="20210912 13:19:49.126" endtime="20210912 13:19:51.210"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://td[contains(text(),'N.A.')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:19:51.211" level="INFO">Clicking element 'xpath://td[contains(text(),'N.A.')]'.</msg>
+<status status="PASS" starttime="20210912 13:19:51.210" endtime="20210912 13:20:09.041"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[contains(text(),'Details')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:20:09.042" level="INFO">Clicking element 'xpath://a[contains(text(),'Details')]'.</msg>
+<status status="PASS" starttime="20210912 13:20:09.041" endtime="20210912 13:20:15.441"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="supervisor_table"]/tbody/tr[157]/td[1]/img[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:20:15.442" level="INFO">Clicking element 'xpath://*[@id="supervisor_table"]/tbody/tr[157]/td[1]/img[1]'.</msg>
+<status status="PASS" starttime="20210912 13:20:15.441" endtime="20210912 13:20:17.521"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="supervisor_table"]/tbody/tr[158]/td[1]/img[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:20:17.522" level="INFO">Clicking element 'xpath://*[@id="supervisor_table"]/tbody/tr[158]/td[1]/img[2]'.</msg>
+<status status="PASS" starttime="20210912 13:20:17.521" endtime="20210912 13:20:19.622"/>
+</kw>
+<status status="PASS" starttime="20210912 13:19:19.456" endtime="20210912 13:20:19.622"/>
+</kw>
+<kw name="set AK CC 550 controller to value" library="AlarmKeywords">
+<arg>9000</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Params_ID164"]/td[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:20:19.623" level="INFO">Clicking element 'xpath://*[@id="Params_ID164"]/td[4]'.</msg>
+<status status="PASS" starttime="20210912 13:20:19.623" endtime="20210912 13:20:21.705"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210912 13:20:21.705" endtime="20210912 13:20:23.777"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<arg>${controllervalue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:20:23.778" level="INFO">Typing text '9000' into text field 'xpath://*[@id="popup_dialog_input_new_value"]'.</msg>
+<status status="PASS" starttime="20210912 13:20:23.777" endtime="20210912 13:20:26.871"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:20:26.872" level="INFO">Clicking element 'xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th'.</msg>
+<status status="PASS" starttime="20210912 13:20:26.872" endtime="20210912 13:20:28.945"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="button_save"]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:20:28.946" level="INFO">Clicking element 'xpath://*[@id="button_save"]/span'.</msg>
+<status status="PASS" starttime="20210912 13:20:28.945" endtime="20210912 13:20:31.040"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:20:36.041" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:20:31.040" endtime="20210912 13:20:36.041"/>
+</kw>
+<status status="PASS" starttime="20210912 13:20:19.622" endtime="20210912 13:20:36.041"/>
+</kw>
+<status status="PASS" starttime="20210912 13:19:19.456" endtime="20210912 13:20:36.041"/>
+</kw>
+<kw name="Then SVB5 active alarm page should be present with High Temp Alarm" library="HighTempAlarmStepDef">
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20210912 13:20:36.043" endtime="20210912 13:20:36.043"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>200seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210912 13:20:36.044" endtime="20210912 13:20:38.067"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210912 13:20:38.067" endtime="20210912 13:20:38.068"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Alarms')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:20:38.069" level="INFO">Clicking element 'xpath://span[contains(text(),'Alarms')]'.</msg>
+<status status="PASS" starttime="20210912 13:20:38.068" endtime="20210912 13:20:40.222"/>
+</kw>
+<kw name="click on device name of apeared alarm" library="AlarmKeywords">
+<arg>AK-CC550-018x 20</arg>
+<arg>--- High Temp Alarm</arg>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<arg>${devicename}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:20:40.223" endtime="20210912 13:20:45.259"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[4]</arg>
+<arg>${alarmtype}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:20:45.259" endtime="20210912 13:20:47.309"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:20:47.309" level="INFO">Clicking element 'xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]'.</msg>
+<status status="PASS" starttime="20210912 13:20:47.309" endtime="20210912 13:20:49.433"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:20:54.448" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:20:49.433" endtime="20210912 13:20:54.448"/>
+</kw>
+<status status="PASS" starttime="20210912 13:20:40.222" endtime="20210912 13:20:54.448"/>
+</kw>
+<kw name="assertion on appered alarm" library="AlarmKeywords">
+<arg>--- High Temp Alarm</arg>
+<arg>AK-CC550-018x 20</arg>
+<arg>20</arg>
+<arg>Alarm if error</arg>
+<arg>Normal</arg>
+<arg>1</arg>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbldescriptionval"]</arg>
+<arg>${alarmtype}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:20:56.507" level="INFO">Element 'xpath://*[@id="lbldescriptionval"]' contains text '--- High Temp Alarm'.</msg>
+<status status="PASS" starttime="20210912 13:20:54.450" endtime="20210912 13:20:56.507"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblpointval"]</arg>
+<arg>${devicename}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:20:58.559" level="INFO">Element 'xpath://*[@id="lblpointval"]' contains text 'AK-CC550-018x 20'.</msg>
+<status status="PASS" starttime="20210912 13:20:56.507" endtime="20210912 13:20:58.559"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbladdressval"]</arg>
+<arg>${address}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:21:00.613" level="INFO">Element 'xpath://*[@id="lbladdressval"]' contains text '20'.</msg>
+<status status="PASS" starttime="20210912 13:20:58.559" endtime="20210912 13:21:00.613"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblsettingval"]</arg>
+<arg>${setting}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:21:02.670" level="INFO">Element 'xpath://*[@id="lblsettingval"]' contains text 'Alarm if error'.</msg>
+<status status="PASS" starttime="20210912 13:21:00.613" endtime="20210912 13:21:02.670"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div</arg>
+<arg>${level}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:21:04.717" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div' contains text 'Normal'.</msg>
+<status status="PASS" starttime="20210912 13:21:02.670" endtime="20210912 13:21:04.717"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div</arg>
+<arg>${action}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:21:06.774" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div' contains text '1'.</msg>
+<status status="PASS" starttime="20210912 13:21:04.717" endtime="20210912 13:21:06.774"/>
+</kw>
+<status status="PASS" starttime="20210912 13:20:54.449" endtime="20210912 13:21:06.774"/>
+</kw>
+<status status="PASS" starttime="20210912 13:20:36.042" endtime="20210912 13:21:06.775"/>
+</kw>
+<kw name="When ack the alarm in SVB5" library="HighTempAlarmStepDef">
+<kw name="click on acknowledge button" library="AlarmKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="btnACK"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:21:06.777" level="INFO">Clicking element 'xpath://*[@id="btnACK"]'.</msg>
+<status status="PASS" starttime="20210912 13:21:06.777" endtime="20210912 13:21:08.895"/>
+</kw>
+<status status="PASS" starttime="20210912 13:21:06.776" endtime="20210912 13:21:08.895"/>
+</kw>
+<status status="PASS" starttime="20210912 13:21:06.775" endtime="20210912 13:21:08.896"/>
+</kw>
+<kw name="Then alarm should be moved to ack alarm list" library="HighTempAlarmStepDef">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='acknowledged']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:21:08.898" level="INFO">Clicking element 'xpath://button[@id='acknowledged']'.</msg>
+<status status="PASS" starttime="20210912 13:21:08.897" endtime="20210912 13:21:11.010"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:21:16.015" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:21:11.010" endtime="20210912 13:21:16.015"/>
+</kw>
+<kw name="click on device name of apeared alarm" library="AlarmKeywords">
+<arg>AK-CC550-018x 20</arg>
+<arg>--- High Temp Alarm</arg>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<arg>${devicename}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:21:16.016" endtime="20210912 13:21:18.077"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[4]</arg>
+<arg>${alarmtype}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:21:18.077" endtime="20210912 13:21:20.132"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:21:20.132" level="INFO">Clicking element 'xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]'.</msg>
+<status status="PASS" starttime="20210912 13:21:20.132" endtime="20210912 13:21:22.263"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:21:27.264" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:21:22.263" endtime="20210912 13:21:27.264"/>
+</kw>
+<status status="PASS" starttime="20210912 13:21:16.015" endtime="20210912 13:21:27.265"/>
+</kw>
+<kw name="assertion on appered alarm" library="AlarmKeywords">
+<arg>--- High Temp Alarm</arg>
+<arg>AK-CC550-018x 20</arg>
+<arg>20</arg>
+<arg>Alarm if error</arg>
+<arg>Normal</arg>
+<arg>1</arg>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbldescriptionval"]</arg>
+<arg>${alarmtype}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:21:29.318" level="INFO">Element 'xpath://*[@id="lbldescriptionval"]' contains text '--- High Temp Alarm'.</msg>
+<status status="PASS" starttime="20210912 13:21:27.266" endtime="20210912 13:21:29.318"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblpointval"]</arg>
+<arg>${devicename}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:21:31.370" level="INFO">Element 'xpath://*[@id="lblpointval"]' contains text 'AK-CC550-018x 20'.</msg>
+<status status="PASS" starttime="20210912 13:21:29.318" endtime="20210912 13:21:31.370"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbladdressval"]</arg>
+<arg>${address}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:21:33.416" level="INFO">Element 'xpath://*[@id="lbladdressval"]' contains text '20'.</msg>
+<status status="PASS" starttime="20210912 13:21:31.370" endtime="20210912 13:21:33.416"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblsettingval"]</arg>
+<arg>${setting}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:21:35.468" level="INFO">Element 'xpath://*[@id="lblsettingval"]' contains text 'Alarm if error'.</msg>
+<status status="PASS" starttime="20210912 13:21:33.416" endtime="20210912 13:21:35.468"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div</arg>
+<arg>${level}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:21:37.523" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div' contains text 'Normal'.</msg>
+<status status="PASS" starttime="20210912 13:21:35.468" endtime="20210912 13:21:37.523"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div</arg>
+<arg>${action}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:21:39.580" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div' contains text '1'.</msg>
+<status status="PASS" starttime="20210912 13:21:37.523" endtime="20210912 13:21:39.580"/>
+</kw>
+<status status="PASS" starttime="20210912 13:21:27.265" endtime="20210912 13:21:39.580"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="btnclose"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:21:39.581" level="INFO">Clicking element 'xpath://*[@id="btnclose"]'.</msg>
+<status status="PASS" starttime="20210912 13:21:39.580" endtime="20210912 13:21:41.668"/>
+</kw>
+<status status="PASS" starttime="20210912 13:21:08.897" endtime="20210912 13:21:41.669"/>
+</kw>
+<kw name="When set Thermostart ait of AK CC 550 controller to 20.0 deg-MCX A0" library="HighTempAlarmStepDef">
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20210912 13:21:41.671" endtime="20210912 13:21:41.671"/>
+</kw>
+<kw name="set AK CC 550 controller to value" library="AlarmKeywords">
+<arg>6000</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Params_ID164"]/td[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:21:41.672" level="INFO">Clicking element 'xpath://*[@id="Params_ID164"]/td[4]'.</msg>
+<status status="PASS" starttime="20210912 13:21:41.672" endtime="20210912 13:21:43.767"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210912 13:21:43.767" endtime="20210912 13:21:45.842"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<arg>${controllervalue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:21:45.843" level="INFO">Typing text '6000' into text field 'xpath://*[@id="popup_dialog_input_new_value"]'.</msg>
+<status status="PASS" starttime="20210912 13:21:45.842" endtime="20210912 13:21:48.936"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:21:48.936" level="INFO">Clicking element 'xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th'.</msg>
+<status status="PASS" starttime="20210912 13:21:48.936" endtime="20210912 13:21:51.013"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="button_save"]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:21:51.014" level="INFO">Clicking element 'xpath://*[@id="button_save"]/span'.</msg>
+<status status="PASS" starttime="20210912 13:21:51.013" endtime="20210912 13:21:53.085"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:21:58.089" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:21:53.085" endtime="20210912 13:21:58.089"/>
+</kw>
+<status status="PASS" starttime="20210912 13:21:41.671" endtime="20210912 13:21:58.089"/>
+</kw>
+<status status="PASS" starttime="20210912 13:21:41.670" endtime="20210912 13:21:58.089"/>
+</kw>
+<kw name="Then the alarm should be cleared from ack alarm page and moves to clear alarm" library="HighTempAlarmStepDef">
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20210912 13:21:58.091" endtime="20210912 13:21:58.091"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>200seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210912 13:21:58.091" endtime="20210912 13:22:00.110"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210912 13:22:00.110" endtime="20210912 13:22:00.111"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="cleared"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:22:00.111" level="INFO">Clicking element 'xpath://*[@id="cleared"]'.</msg>
+<status status="PASS" starttime="20210912 13:22:00.111" endtime="20210912 13:22:02.246"/>
+</kw>
+<kw name="click on device name of apeared alarm" library="AlarmKeywords">
+<arg>AK-CC550-018x 20</arg>
+<arg>--- High Temp Alarm</arg>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<arg>${devicename}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:22:02.246" endtime="20210912 13:22:05.891"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[4]</arg>
+<arg>${alarmtype}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:22:05.891" endtime="20210912 13:23:15.441"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:23:15.441" level="INFO">Clicking element 'xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]'.</msg>
+<status status="PASS" starttime="20210912 13:23:15.441" endtime="20210912 13:23:17.564"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:23:22.567" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:23:17.564" endtime="20210912 13:23:22.567"/>
+</kw>
+<status status="PASS" starttime="20210912 13:22:02.246" endtime="20210912 13:23:22.568"/>
+</kw>
+<kw name="assertion on appered alarm" library="AlarmKeywords">
+<arg>--- High Temp Alarm</arg>
+<arg>AK-CC550-018x 20</arg>
+<arg>20</arg>
+<arg>Alarm if error</arg>
+<arg>Normal</arg>
+<arg>1</arg>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbldescriptionval"]</arg>
+<arg>${alarmtype}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:23:24.635" level="INFO">Element 'xpath://*[@id="lbldescriptionval"]' contains text '--- High Temp Alarm'.</msg>
+<status status="PASS" starttime="20210912 13:23:22.569" endtime="20210912 13:23:24.635"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblpointval"]</arg>
+<arg>${devicename}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:23:26.717" level="INFO">Element 'xpath://*[@id="lblpointval"]' contains text 'AK-CC550-018x 20'.</msg>
+<status status="PASS" starttime="20210912 13:23:24.635" endtime="20210912 13:23:26.717"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbladdressval"]</arg>
+<arg>${address}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:23:28.796" level="INFO">Element 'xpath://*[@id="lbladdressval"]' contains text '20'.</msg>
+<status status="PASS" starttime="20210912 13:23:26.718" endtime="20210912 13:23:28.796"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblsettingval"]</arg>
+<arg>${setting}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:23:30.838" level="INFO">Element 'xpath://*[@id="lblsettingval"]' contains text 'Alarm if error'.</msg>
+<status status="PASS" starttime="20210912 13:23:28.796" endtime="20210912 13:23:30.838"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div</arg>
+<arg>${level}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:23:32.902" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div' contains text 'Normal'.</msg>
+<status status="PASS" starttime="20210912 13:23:30.838" endtime="20210912 13:23:32.902"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div</arg>
+<arg>${action}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:23:34.962" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div' contains text '1'.</msg>
+<status status="PASS" starttime="20210912 13:23:32.902" endtime="20210912 13:23:34.962"/>
+</kw>
+<status status="PASS" starttime="20210912 13:23:22.568" endtime="20210912 13:23:34.962"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="btnclose"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:23:34.963" level="INFO">Clicking element 'xpath://*[@id="btnclose"]'.</msg>
+<status status="PASS" starttime="20210912 13:23:34.963" endtime="20210912 13:23:37.089"/>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20210912 13:23:37.090" endtime="20210912 13:23:37.091"/>
+</kw>
+<kw name="set AK CC 550 controller to value" library="AlarmKeywords">
+<arg>9000</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Params_ID164"]/td[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:23:37.092" level="INFO">Clicking element 'xpath://*[@id="Params_ID164"]/td[4]'.</msg>
+<status status="PASS" starttime="20210912 13:23:37.092" endtime="20210912 13:23:39.186"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210912 13:23:39.186" endtime="20210912 13:23:41.257"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<arg>${controllervalue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:23:41.258" level="INFO">Typing text '9000' into text field 'xpath://*[@id="popup_dialog_input_new_value"]'.</msg>
+<status status="PASS" starttime="20210912 13:23:41.257" endtime="20210912 13:23:44.361"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:23:44.362" level="INFO">Clicking element 'xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th'.</msg>
+<status status="PASS" starttime="20210912 13:23:44.361" endtime="20210912 13:23:46.441"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="button_save"]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:23:46.441" level="INFO">Clicking element 'xpath://*[@id="button_save"]/span'.</msg>
+<status status="PASS" starttime="20210912 13:23:46.441" endtime="20210912 13:23:48.514"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:23:53.518" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:23:48.514" endtime="20210912 13:23:53.518"/>
+</kw>
+<status status="PASS" starttime="20210912 13:23:37.091" endtime="20210912 13:23:53.518"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210912 13:23:53.518" endtime="20210912 13:23:59.670"/>
+</kw>
+<status status="PASS" starttime="20210912 13:21:58.090" endtime="20210912 13:23:59.670"/>
+</kw>
+<status status="PASS" starttime="20210912 13:18:21.236" endtime="20210912 13:23:59.670"/>
+</test>
+<status status="PASS" starttime="20210912 13:18:20.926" endtime="20210912 13:23:59.670"/>
+</suite>
+<suite id="s1-s2" name="LowTempAlarmFeature" source="C:\Users\61449\PycharmProjects\DanfossAutomation\AlarmTest\Features\LowTempAlarmFeature.robot">
+<test id="s1-s2-t1" name="HighTempAlarmTest">
+<kw name="Given Set Low temp alarm limit -5.0 deg-SVB5" library="LowTempAlarmStepDef">
+<kw name="LogintoSVB5 and Select device AK-CC550-018x 20" library="AlarmKeywords">
+<arg>Supervisor</arg>
+<arg>S@danfoss123</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${danfossURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210912 13:23:59.680" level="INFO">Opening browser 'chrome' to base url 'https://118.185.187.242:6027/#/'.</msg>
+<status status="PASS" starttime="20210912 13:23:59.680" endtime="20210912 13:24:02.521"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>50seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210912 13:24:02.521" endtime="20210912 13:24:03.524"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210912 13:24:03.524" endtime="20210912 13:24:03.524"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="details-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:03.524" level="INFO">Clicking element 'xpath://*[@id="details-button"]'.</msg>
+<status status="PASS" starttime="20210912 13:24:03.524" endtime="20210912 13:24:05.598"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://*[@id="proceed-link"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:05.598" level="INFO">Clicking link 'xpath://*[@id="proceed-link"]'.</msg>
+<status status="PASS" starttime="20210912 13:24:05.598" endtime="20210912 13:24:12.366"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="user"]</arg>
+<arg>${SVB5username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:12.366" level="INFO">Typing text 'Supervisor' into text field 'xpath://*[@id="user"]'.</msg>
+<status status="PASS" starttime="20210912 13:24:12.366" endtime="20210912 13:24:15.511"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="pwd"]</arg>
+<arg>${SVB5password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:15.511" level="INFO">Typing text 'S@danfoss123' into text field 'xpath://*[@id="pwd"]'.</msg>
+<status status="PASS" starttime="20210912 13:24:15.511" endtime="20210912 13:24:18.661"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="signup-form"]/form/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:18.661" level="INFO">Clicking element 'xpath://*[@id="signup-form"]/form/input'.</msg>
+<status status="PASS" starttime="20210912 13:24:18.661" endtime="20210912 13:24:20.730"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'File')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:20.731" level="INFO">Clicking element 'xpath://span[contains(text(),'File')]'.</msg>
+<status status="PASS" starttime="20210912 13:24:20.730" endtime="20210912 13:24:23.646"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Preferences')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:23.647" level="INFO">Clicking element 'xpath://span[contains(text(),'Preferences')]'.</msg>
+<status status="PASS" starttime="20210912 13:24:23.646" endtime="20210912 13:24:25.979"/>
+</kw>
+<kw name="Unselect Checkbox" library="SeleniumLibrary">
+<arg>xpath://app-header/div[@id='Preferences']/div[1]/div[1]/div[2]/div[5]/div[1]/input[1]</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:25.980" level="INFO">Unselecting checkbox 'xpath://app-header/div[@id='Preferences']/div[1]/div[1]/div[2]/div[5]/div[1]/input[1]'.</msg>
+<status status="PASS" starttime="20210912 13:24:25.979" endtime="20210912 13:24:31.988"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://app-header/div[@id='Preferences']/div[1]/div[1]/div[1]/button[1]/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:31.989" level="INFO">Clicking element 'xpath://app-header/div[@id='Preferences']/div[1]/div[1]/div[1]/button[1]/span[1]'.</msg>
+<status status="PASS" starttime="20210912 13:24:31.988" endtime="20210912 13:24:34.456"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-dashboard/section/div/app-device[1]/div/div/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[24]/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20210912 13:24:34.456" endtime="20210912 13:24:37.106"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-dashboard/section/div/app-device[1]/div/div/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[24]/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:37.106" level="INFO">Clicking element 'xpath://*[@id="app-main"]/div/app-dashboard/section/div/app-device[1]/div/div/div/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper[24]/datatable-body-row/div[2]/datatable-body-cell[2]'.</msg>
+<status status="PASS" starttime="20210912 13:24:37.106" endtime="20210912 13:24:39.853"/>
+</kw>
+<status status="PASS" starttime="20210912 13:23:59.680" endtime="20210912 13:24:39.853"/>
+</kw>
+<kw name="Set Low Temp in SVB5" library="LowTempAlarmStepDef">
+<arg>-5.0</arg>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>xpath://td[contains(text(),'-5.0 °C')]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:39.854" level="INFO">Double clicking element 'xpath://td[contains(text(),'-5.0 °C')]'.</msg>
+<status status="PASS" starttime="20210912 13:24:39.854" endtime="20210912 13:24:43.818"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://body/ngb-modal-window[1]/div[1]/div[1]/app-edit-float[1]/div[1]/form[1]/div[2]/input[1]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210912 13:24:43.818" endtime="20210912 13:24:45.920"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://body/ngb-modal-window[1]/div[1]/div[1]/app-edit-float[1]/div[1]/form[1]/div[2]/input[1]</arg>
+<arg>${tempvalueinsvb5}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:45.921" level="INFO">Typing text '-5.0' into text field 'xpath://body/ngb-modal-window[1]/div[1]/div[1]/app-edit-float[1]/div[1]/form[1]/div[2]/input[1]'.</msg>
+<status status="PASS" starttime="20210912 13:24:45.920" endtime="20210912 13:24:49.143"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://body/ngb-modal-window[1]/div[1]/div[1]/app-edit-float[1]/div[1]/form[1]/div[3]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:49.144" level="INFO">Clicking element 'xpath://body/ngb-modal-window[1]/div[1]/div[1]/app-edit-float[1]/div[1]/form[1]/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20210912 13:24:49.143" endtime="20210912 13:24:51.271"/>
+</kw>
+<status status="PASS" starttime="20210912 13:24:39.853" endtime="20210912 13:24:51.271"/>
+</kw>
+<status status="PASS" starttime="20210912 13:23:59.680" endtime="20210912 13:24:51.271"/>
+</kw>
+<kw name="And Set Alarm Delay 0-SVB5" library="LowTempAlarmStepDef">
+<kw name="setting delay in svb5" library="AlarmKeywords">
+<arg>0</arg>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>xpath://td[contains(text(),'0 min')]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:51.274" level="INFO">Double clicking element 'xpath://td[contains(text(),'0 min')]'.</msg>
+<status status="PASS" starttime="20210912 13:24:51.273" endtime="20210912 13:24:53.692"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="idEditInt"]/form/div[2]/input</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210912 13:24:53.692" endtime="20210912 13:24:55.843"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="idEditInt"]/form/div[2]/input</arg>
+<arg>${delayvalueinsvb5}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:55.844" level="INFO">Typing text '0' into text field 'xpath://*[@id="idEditInt"]/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20210912 13:24:55.843" endtime="20210912 13:24:59.016"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="idEditInt"]/form/div[3]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:24:59.016" level="INFO">Clicking element 'xpath://*[@id="idEditInt"]/form/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20210912 13:24:59.016" endtime="20210912 13:25:01.161"/>
+</kw>
+<status status="PASS" starttime="20210912 13:24:51.273" endtime="20210912 13:25:01.161"/>
+</kw>
+<status status="PASS" starttime="20210912 13:24:51.272" endtime="20210912 13:25:01.162"/>
+</kw>
+<kw name="When set Thermostart air of AK CC 550 controller to 20.0 deg-MCX A0" library="LowTempAlarmStepDef">
+<kw name="LogintoMCX and select analog output" library="AlarmKeywords">
+<arg>admin</arg>
+<arg>PASS</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${MCXURL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210912 13:25:01.166" level="INFO">Opening browser 'chrome' to base url 'http://118.185.187.242:6031/Login.html'.</msg>
+<status status="PASS" starttime="20210912 13:25:01.165" endtime="20210912 13:25:22.187"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>200seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210912 13:25:22.187" endtime="20210912 13:25:24.209"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210912 13:25:24.209" endtime="20210912 13:25:24.210"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="usernameDisplay"]</arg>
+<arg>${MCXusername}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:25:24.211" level="INFO">Typing text 'admin' into text field 'xpath://*[@id="usernameDisplay"]'.</msg>
+<status status="PASS" starttime="20210912 13:25:24.210" endtime="20210912 13:25:27.349"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='password']</arg>
+<arg>${MCXpassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:25:27.350" level="INFO">Typing text 'PASS' into text field 'xpath://input[@id='password']'.</msg>
+<status status="PASS" starttime="20210912 13:25:27.349" endtime="20210912 13:25:30.479"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="button_login"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:25:30.480" level="INFO">Clicking element 'xpath://*[@id="button_login"]'.</msg>
+<status status="PASS" starttime="20210912 13:25:30.479" endtime="20210912 13:25:32.571"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://td[contains(text(),'N.A.')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:25:32.571" level="INFO">Clicking element 'xpath://td[contains(text(),'N.A.')]'.</msg>
+<status status="PASS" starttime="20210912 13:25:32.571" endtime="20210912 13:25:49.620"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[contains(text(),'Details')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:25:49.621" level="INFO">Clicking element 'xpath://a[contains(text(),'Details')]'.</msg>
+<status status="PASS" starttime="20210912 13:25:49.621" endtime="20210912 13:25:56.088"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="supervisor_table"]/tbody/tr[157]/td[1]/img[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:25:56.089" level="INFO">Clicking element 'xpath://*[@id="supervisor_table"]/tbody/tr[157]/td[1]/img[1]'.</msg>
+<status status="PASS" starttime="20210912 13:25:56.088" endtime="20210912 13:25:58.161"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="supervisor_table"]/tbody/tr[158]/td[1]/img[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:25:58.162" level="INFO">Clicking element 'xpath://*[@id="supervisor_table"]/tbody/tr[158]/td[1]/img[2]'.</msg>
+<status status="PASS" starttime="20210912 13:25:58.161" endtime="20210912 13:26:00.253"/>
+</kw>
+<status status="PASS" starttime="20210912 13:25:01.164" endtime="20210912 13:26:00.253"/>
+</kw>
+<kw name="set AK CC 550 controller to value" library="AlarmKeywords">
+<arg>6000</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Params_ID164"]/td[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:26:00.254" level="INFO">Clicking element 'xpath://*[@id="Params_ID164"]/td[4]'.</msg>
+<status status="PASS" starttime="20210912 13:26:00.254" endtime="20210912 13:26:02.347"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210912 13:26:02.347" endtime="20210912 13:26:04.416"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<arg>${controllervalue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:26:04.418" level="INFO">Typing text '6000' into text field 'xpath://*[@id="popup_dialog_input_new_value"]'.</msg>
+<status status="PASS" starttime="20210912 13:26:04.417" endtime="20210912 13:26:07.520"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:26:07.521" level="INFO">Clicking element 'xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th'.</msg>
+<status status="PASS" starttime="20210912 13:26:07.520" endtime="20210912 13:26:09.595"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="button_save"]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:26:09.596" level="INFO">Clicking element 'xpath://*[@id="button_save"]/span'.</msg>
+<status status="PASS" starttime="20210912 13:26:09.595" endtime="20210912 13:26:11.670"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:26:16.683" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:26:11.670" endtime="20210912 13:26:16.683"/>
+</kw>
+<status status="PASS" starttime="20210912 13:26:00.253" endtime="20210912 13:26:16.683"/>
+</kw>
+<status status="PASS" starttime="20210912 13:25:01.163" endtime="20210912 13:26:16.683"/>
+</kw>
+<kw name="Then SVB5 active alarm page should be present with High Temp Alarm" library="LowTempAlarmStepDef">
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20210912 13:26:16.685" endtime="20210912 13:26:16.685"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>200seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210912 13:26:16.686" endtime="20210912 13:26:18.715"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210912 13:26:18.715" endtime="20210912 13:26:18.715"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Alarms')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:26:18.716" level="INFO">Clicking element 'xpath://span[contains(text(),'Alarms')]'.</msg>
+<status status="PASS" starttime="20210912 13:26:18.715" endtime="20210912 13:26:20.867"/>
+</kw>
+<kw name="click on device name of apeared alarm" library="AlarmKeywords">
+<arg>AK-CC550-018x 20</arg>
+<arg>--- Low Temp Alarm</arg>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<arg>${devicename}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:26:20.868" endtime="20210912 13:26:25.572"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[4]</arg>
+<arg>${alarmtype}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:26:25.572" endtime="20210912 13:27:55.320"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:27:55.321" level="INFO">Clicking element 'xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]'.</msg>
+<status status="PASS" starttime="20210912 13:27:55.320" endtime="20210912 13:27:57.457"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:28:02.463" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:27:57.457" endtime="20210912 13:28:02.463"/>
+</kw>
+<status status="PASS" starttime="20210912 13:26:20.867" endtime="20210912 13:28:02.464"/>
+</kw>
+<kw name="assertion on appered alarm" library="AlarmKeywords">
+<arg>--- Low Temp Alarm</arg>
+<arg>AK-CC550-018x 20</arg>
+<arg>20</arg>
+<arg>Alarm if error</arg>
+<arg>Normal</arg>
+<arg>1</arg>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbldescriptionval"]</arg>
+<arg>${alarmtype}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:04.512" level="INFO">Element 'xpath://*[@id="lbldescriptionval"]' contains text '--- Low Temp Alarm'.</msg>
+<status status="PASS" starttime="20210912 13:28:02.466" endtime="20210912 13:28:04.512"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblpointval"]</arg>
+<arg>${devicename}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:06.578" level="INFO">Element 'xpath://*[@id="lblpointval"]' contains text 'AK-CC550-018x 20'.</msg>
+<status status="PASS" starttime="20210912 13:28:04.512" endtime="20210912 13:28:06.578"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbladdressval"]</arg>
+<arg>${address}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:08.627" level="INFO">Element 'xpath://*[@id="lbladdressval"]' contains text '20'.</msg>
+<status status="PASS" starttime="20210912 13:28:06.578" endtime="20210912 13:28:08.627"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblsettingval"]</arg>
+<arg>${setting}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:10.684" level="INFO">Element 'xpath://*[@id="lblsettingval"]' contains text 'Alarm if error'.</msg>
+<status status="PASS" starttime="20210912 13:28:08.627" endtime="20210912 13:28:10.684"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div</arg>
+<arg>${level}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:12.725" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div' contains text 'Normal'.</msg>
+<status status="PASS" starttime="20210912 13:28:10.684" endtime="20210912 13:28:12.725"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div</arg>
+<arg>${action}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:14.763" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div' contains text '1'.</msg>
+<status status="PASS" starttime="20210912 13:28:12.725" endtime="20210912 13:28:14.763"/>
+</kw>
+<status status="PASS" starttime="20210912 13:28:02.464" endtime="20210912 13:28:14.763"/>
+</kw>
+<status status="PASS" starttime="20210912 13:26:16.684" endtime="20210912 13:28:14.763"/>
+</kw>
+<kw name="When ack the alarm in SVB5" library="LowTempAlarmStepDef">
+<kw name="click on acknowledge button" library="AlarmKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="btnACK"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:28:14.765" level="INFO">Clicking element 'xpath://*[@id="btnACK"]'.</msg>
+<status status="PASS" starttime="20210912 13:28:14.765" endtime="20210912 13:28:16.901"/>
+</kw>
+<status status="PASS" starttime="20210912 13:28:14.764" endtime="20210912 13:28:16.901"/>
+</kw>
+<status status="PASS" starttime="20210912 13:28:14.764" endtime="20210912 13:28:16.902"/>
+</kw>
+<kw name="Then alarm should be moved to ack alarm list" library="LowTempAlarmStepDef">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='acknowledged']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:28:16.903" level="INFO">Clicking element 'xpath://button[@id='acknowledged']'.</msg>
+<status status="PASS" starttime="20210912 13:28:16.903" endtime="20210912 13:28:19.005"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:28:24.017" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:28:19.005" endtime="20210912 13:28:24.017"/>
+</kw>
+<kw name="click on device name of apeared alarm" library="AlarmKeywords">
+<arg>AK-CC550-018x 20</arg>
+<arg>--- Low Temp Alarm</arg>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<arg>${devicename}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:28:24.018" endtime="20210912 13:28:26.081"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[4]</arg>
+<arg>${alarmtype}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:28:26.081" endtime="20210912 13:28:28.135"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:28:28.136" level="INFO">Clicking element 'xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]'.</msg>
+<status status="PASS" starttime="20210912 13:28:28.136" endtime="20210912 13:28:30.278"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:28:35.281" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:28:30.278" endtime="20210912 13:28:35.282"/>
+</kw>
+<status status="PASS" starttime="20210912 13:28:24.017" endtime="20210912 13:28:35.282"/>
+</kw>
+<kw name="assertion on appered alarm" library="AlarmKeywords">
+<arg>--- Low Temp Alarm</arg>
+<arg>AK-CC550-018x 20</arg>
+<arg>20</arg>
+<arg>Alarm if error</arg>
+<arg>Normal</arg>
+<arg>1</arg>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbldescriptionval"]</arg>
+<arg>${alarmtype}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:37.341" level="INFO">Element 'xpath://*[@id="lbldescriptionval"]' contains text '--- Low Temp Alarm'.</msg>
+<status status="PASS" starttime="20210912 13:28:35.283" endtime="20210912 13:28:37.341"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblpointval"]</arg>
+<arg>${devicename}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:39.386" level="INFO">Element 'xpath://*[@id="lblpointval"]' contains text 'AK-CC550-018x 20'.</msg>
+<status status="PASS" starttime="20210912 13:28:37.341" endtime="20210912 13:28:39.386"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbladdressval"]</arg>
+<arg>${address}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:41.453" level="INFO">Element 'xpath://*[@id="lbladdressval"]' contains text '20'.</msg>
+<status status="PASS" starttime="20210912 13:28:39.386" endtime="20210912 13:28:41.453"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblsettingval"]</arg>
+<arg>${setting}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:43.514" level="INFO">Element 'xpath://*[@id="lblsettingval"]' contains text 'Alarm if error'.</msg>
+<status status="PASS" starttime="20210912 13:28:41.453" endtime="20210912 13:28:43.514"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div</arg>
+<arg>${level}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:45.565" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div' contains text 'Normal'.</msg>
+<status status="PASS" starttime="20210912 13:28:43.514" endtime="20210912 13:28:45.565"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div</arg>
+<arg>${action}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:28:47.623" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div' contains text '1'.</msg>
+<status status="PASS" starttime="20210912 13:28:45.565" endtime="20210912 13:28:47.623"/>
+</kw>
+<status status="PASS" starttime="20210912 13:28:35.282" endtime="20210912 13:28:47.623"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="btnclose"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:28:47.624" level="INFO">Clicking element 'xpath://*[@id="btnclose"]'.</msg>
+<status status="PASS" starttime="20210912 13:28:47.624" endtime="20210912 13:28:49.744"/>
+</kw>
+<status status="PASS" starttime="20210912 13:28:16.902" endtime="20210912 13:28:49.744"/>
+</kw>
+<kw name="When set Thermostart ait of AK CC 550 controller to 30.0 deg-MCX A0" library="LowTempAlarmStepDef">
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20210912 13:28:49.746" endtime="20210912 13:28:49.746"/>
+</kw>
+<kw name="set AK CC 550 controller to value" library="AlarmKeywords">
+<arg>9000</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Params_ID164"]/td[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:28:49.747" level="INFO">Clicking element 'xpath://*[@id="Params_ID164"]/td[4]'.</msg>
+<status status="PASS" starttime="20210912 13:28:49.747" endtime="20210912 13:28:51.824"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210912 13:28:51.824" endtime="20210912 13:28:53.897"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<arg>${controllervalue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:28:53.898" level="INFO">Typing text '9000' into text field 'xpath://*[@id="popup_dialog_input_new_value"]'.</msg>
+<status status="PASS" starttime="20210912 13:28:53.897" endtime="20210912 13:28:56.987"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:28:56.987" level="INFO">Clicking element 'xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th'.</msg>
+<status status="PASS" starttime="20210912 13:28:56.987" endtime="20210912 13:28:59.051"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="button_save"]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:28:59.052" level="INFO">Clicking element 'xpath://*[@id="button_save"]/span'.</msg>
+<status status="PASS" starttime="20210912 13:28:59.051" endtime="20210912 13:29:01.136"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:29:06.145" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:29:01.136" endtime="20210912 13:29:06.145"/>
+</kw>
+<status status="PASS" starttime="20210912 13:28:49.746" endtime="20210912 13:29:06.146"/>
+</kw>
+<status status="PASS" starttime="20210912 13:28:49.745" endtime="20210912 13:29:06.146"/>
+</kw>
+<kw name="Then the alarm should be cleared from ack alarm page and moves to clear alarm" library="LowTempAlarmStepDef">
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20210912 13:29:06.148" endtime="20210912 13:29:06.149"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>200seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210912 13:29:06.149" endtime="20210912 13:29:08.169"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210912 13:29:08.169" endtime="20210912 13:29:08.169"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="cleared"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:29:08.170" level="INFO">Clicking element 'xpath://*[@id="cleared"]'.</msg>
+<status status="PASS" starttime="20210912 13:29:08.169" endtime="20210912 13:29:10.315"/>
+</kw>
+<kw name="click on device name of apeared alarm" library="AlarmKeywords">
+<arg>AK-CC550-018x 20</arg>
+<arg>--- Low Temp Alarm</arg>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<arg>${devicename}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:29:10.316" endtime="20210912 13:29:14.017"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[4]</arg>
+<arg>${alarmtype}</arg>
+<arg>timeout=200s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20210912 13:29:14.017" endtime="20210912 13:29:56.639"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:29:56.640" level="INFO">Clicking element 'xpath://*[@id="app-main"]/div/app-alarms/section/div/div/div/div/div[2]/datatable/ngx-datatable/div/datatable-body/datatable-selection/datatable-scroller/datatable-row-wrapper/datatable-body-row/div[2]/datatable-body-cell[2]'.</msg>
+<status status="PASS" starttime="20210912 13:29:56.639" endtime="20210912 13:29:58.766"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:30:03.781" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:29:58.766" endtime="20210912 13:30:03.781"/>
+</kw>
+<status status="PASS" starttime="20210912 13:29:10.315" endtime="20210912 13:30:03.781"/>
+</kw>
+<kw name="assertion on appered alarm" library="AlarmKeywords">
+<arg>--- Low Temp Alarm</arg>
+<arg>AK-CC550-018x 20</arg>
+<arg>20</arg>
+<arg>Alarm if error</arg>
+<arg>Normal</arg>
+<arg>1</arg>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbldescriptionval"]</arg>
+<arg>${alarmtype}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:30:05.841" level="INFO">Element 'xpath://*[@id="lbldescriptionval"]' contains text '--- Low Temp Alarm'.</msg>
+<status status="PASS" starttime="20210912 13:30:03.782" endtime="20210912 13:30:05.841"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblpointval"]</arg>
+<arg>${devicename}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:30:07.901" level="INFO">Element 'xpath://*[@id="lblpointval"]' contains text 'AK-CC550-018x 20'.</msg>
+<status status="PASS" starttime="20210912 13:30:05.841" endtime="20210912 13:30:07.901"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lbladdressval"]</arg>
+<arg>${address}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:30:09.969" level="INFO">Element 'xpath://*[@id="lbladdressval"]' contains text '20'.</msg>
+<status status="PASS" starttime="20210912 13:30:07.901" endtime="20210912 13:30:09.969"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath://*[@id="lblsettingval"]</arg>
+<arg>${setting}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:30:12.014" level="INFO">Element 'xpath://*[@id="lblsettingval"]' contains text 'Alarm if error'.</msg>
+<status status="PASS" starttime="20210912 13:30:09.969" endtime="20210912 13:30:12.014"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div</arg>
+<arg>${level}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:30:14.080" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[9]/div' contains text 'Normal'.</msg>
+<status status="PASS" starttime="20210912 13:30:12.014" endtime="20210912 13:30:14.080"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div</arg>
+<arg>${action}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210912 13:30:16.134" level="INFO">Element 'xpath:/html/body/ngb-modal-window/div/div/app-alarmdetailmodal/div[2]/form/div[10]/div' contains text '1'.</msg>
+<status status="PASS" starttime="20210912 13:30:14.080" endtime="20210912 13:30:16.134"/>
+</kw>
+<status status="PASS" starttime="20210912 13:30:03.781" endtime="20210912 13:30:16.134"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="btnclose"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:30:16.135" level="INFO">Clicking element 'xpath://*[@id="btnclose"]'.</msg>
+<status status="PASS" starttime="20210912 13:30:16.134" endtime="20210912 13:30:18.274"/>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20210912 13:30:18.274" endtime="20210912 13:30:18.275"/>
+</kw>
+<kw name="set AK CC 550 controller to value" library="AlarmKeywords">
+<arg>6000</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Params_ID164"]/td[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:30:18.276" level="INFO">Clicking element 'xpath://*[@id="Params_ID164"]/td[4]'.</msg>
+<status status="PASS" starttime="20210912 13:30:18.276" endtime="20210912 13:30:20.381"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210912 13:30:20.381" endtime="20210912 13:30:22.461"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog_input_new_value"]</arg>
+<arg>${controllervalue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210912 13:30:22.462" level="INFO">Typing text '6000' into text field 'xpath://*[@id="popup_dialog_input_new_value"]'.</msg>
+<status status="PASS" starttime="20210912 13:30:22.461" endtime="20210912 13:30:25.554"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:30:25.555" level="INFO">Clicking element 'xpath://*[@id="popup_dialog"]/center/table/tbody/tr[4]/th'.</msg>
+<status status="PASS" starttime="20210912 13:30:25.554" endtime="20210912 13:30:27.626"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="button_save"]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210912 13:30:27.627" level="INFO">Clicking element 'xpath://*[@id="button_save"]/span'.</msg>
+<status status="PASS" starttime="20210912 13:30:27.626" endtime="20210912 13:30:29.690"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210912 13:30:34.705" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210912 13:30:29.690" endtime="20210912 13:30:34.705"/>
+</kw>
+<status status="PASS" starttime="20210912 13:30:18.275" endtime="20210912 13:30:34.705"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210912 13:30:34.706" endtime="20210912 13:30:40.848"/>
+</kw>
+<status status="PASS" starttime="20210912 13:29:06.147" endtime="20210912 13:30:40.848"/>
+</kw>
+<status status="PASS" starttime="20210912 13:23:59.680" endtime="20210912 13:30:40.850"/>
+</test>
+<status status="PASS" starttime="20210912 13:23:59.670" endtime="20210912 13:30:40.851"/>
+</suite>
+<status status="PASS" starttime="20210912 13:18:20.894" endtime="20210912 13:30:40.851"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="HighTempAlarmFeature &amp; LowTempAlarmFeature">HighTempAlarmFeature &amp; LowTempAlarmFeature</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="HighTempAlarmFeature">HighTempAlarmFeature &amp; LowTempAlarmFeature.HighTempAlarmFeature</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="LowTempAlarmFeature">HighTempAlarmFeature &amp; LowTempAlarmFeature.LowTempAlarmFeature</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
